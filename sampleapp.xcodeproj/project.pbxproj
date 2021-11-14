@@ -74,6 +74,7 @@
 		AD03386A272CFC0600DEAB10 = {
 			isa = PBXGroup;
 			children = (
+				AD1553282740AF6200F2A17A /* modules */,
 				AD033875272CFC0700DEAB10 /* sampleapp */,
 				AD033886272CFC0A00DEAB10 /* sampleappTests */,
 				AD033890272CFC0A00DEAB10 /* sampleappUITests */,
@@ -125,6 +126,13 @@
 				AD033893272CFC0A00DEAB10 /* sampleappUITestsLaunchTests.swift */,
 			);
 			path = sampleappUITests;
+			sourceTree = "<group>";
+		};
+		AD1553282740AF6200F2A17A /* modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
