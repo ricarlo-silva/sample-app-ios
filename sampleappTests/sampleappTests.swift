@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import CoreNetwork
 @testable import sampleapp
 
 class sampleappTests: XCTestCase {
@@ -18,9 +19,19 @@ class sampleappTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testExample() async throws {
+        
+        guard let url = URL(string: "https://www.mockachino.com/736ea5cc-a723-43/users") else {
+            return
+        }
+        let result = await NetworkClient.shared.getRequest(url: url, type: String.self)
+        switch result {
+        case .success(let user):
+            XCTAssertEqual(user, "test")
+            
+        case .failure(let error):
+            XCTAssertTrue(error is DecodingError)
+        }
     }
 
     func testPerformanceExample() throws {
