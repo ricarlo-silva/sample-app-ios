@@ -16,6 +16,7 @@
 		AD033894272CFC0A00DEAB10 /* sampleappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD033893272CFC0A00DEAB10 /* sampleappUITestsLaunchTests.swift */; };
 		AD1553962741AF4D00F2A17A /* CoreNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1553932741AE6E00F2A17A /* CoreNetwork.framework */; };
 		AD1553972741AF4D00F2A17A /* CoreNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD1553932741AE6E00F2A17A /* CoreNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD15539A2741CED100F2A17A /* CoreNetwork.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD1553992741CED100F2A17A /* CoreNetwork.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		AD033891272CFC0A00DEAB10 /* sampleappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleappUITests.swift; sourceTree = "<group>"; };
 		AD033893272CFC0A00DEAB10 /* sampleappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleappUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AD15538D2741AE6E00F2A17A /* CoreNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreNetwork.xcodeproj; path = "modules/core-network-ios/CoreNetwork.xcodeproj"; sourceTree = "<group>"; };
+		AD1553992741CED100F2A17A /* CoreNetwork.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CoreNetwork.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		AD03386A272CFC0600DEAB10 = {
 			isa = PBXGroup;
 			children = (
+				AD1553992741CED100F2A17A /* CoreNetwork.plist */,
 				AD1553282740AF6200F2A17A /* modules */,
 				AD033875272CFC0700DEAB10 /* sampleapp */,
 				AD033886272CFC0A00DEAB10 /* sampleappTests */,
@@ -313,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD15539A2741CED100F2A17A /* CoreNetwork.plist in Resources */,
 				AD03387E272CFC0A00DEAB10 /* Preview Assets.xcassets in Resources */,
 				AD03387B272CFC0A00DEAB10 /* Assets.xcassets in Resources */,
 			);
