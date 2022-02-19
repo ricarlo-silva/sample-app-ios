@@ -11,10 +11,10 @@ import CoreNetwork
 
 class sampleappTests: XCTestCase {
     
-    private let apiClient = NetworkClient.shared
+    private let apiClient : NetworkClientProtocol = NetworkClient.shared
     
     override func setUp() {
-        apiClient.setup()
+        apiClient.setup(authenticator: nil, interceptors: [])
     }
     
     override func setUpWithError() throws {
@@ -25,9 +25,9 @@ class sampleappTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testPost() async throws {
+    func testGet() async throws {
         
-        let requet = Request<RepoRequest>(
+        let request = Request(
             path: "https://api.github.com/repos/ricarlo-silva/sample-app-ios",
             httpMethod: .GET,
             queries: [
@@ -45,7 +45,7 @@ class sampleappTests: XCTestCase {
 //            )
         )
         
-        let result = await apiClient.call(request: requet, type: RepositoryResponse.self)
+        let result = await apiClient.call(request: request, type: RepositoryResponse.self)
         
         switch result {
         case .success(let repo):
