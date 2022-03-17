@@ -14,8 +14,6 @@
 		AD033888272CFC0A00DEAB10 /* sampleappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD033887272CFC0A00DEAB10 /* sampleappTests.swift */; };
 		AD033892272CFC0A00DEAB10 /* sampleappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD033891272CFC0A00DEAB10 /* sampleappUITests.swift */; };
 		AD033894272CFC0A00DEAB10 /* sampleappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD033893272CFC0A00DEAB10 /* sampleappUITestsLaunchTests.swift */; };
-		AD1553962741AF4D00F2A17A /* CoreNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1553932741AE6E00F2A17A /* CoreNetwork.framework */; };
-		AD1553972741AF4D00F2A17A /* CoreNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD1553932741AE6E00F2A17A /* CoreNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD15539A2741CED100F2A17A /* CoreNetwork.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD1553992741CED100F2A17A /* CoreNetwork.plist */; };
 		AD2393402778AE0800984D06 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD23933F2778AE0800984D06 /* LibraryViewModel.swift */; };
 		AD38A7142757258E009F8722 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38A7132757258E009F8722 /* HomeView.swift */; };
@@ -27,6 +25,7 @@
 		AD3CAE1E27547A1B001734E8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3CAE1D27547A1B001734E8 /* AuthViewModel.swift */; };
 		AD3CAE2027547ADA001734E8 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3CAE1F27547ADA001734E8 /* UserSession.swift */; };
 		AD3CAE2227547D7D001734E8 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD3CAE2127547D7D001734E8 /* Keys.plist */; };
+		AD3DFD7827E3373C00DE4239 /* CoreNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = AD3DFD7727E3373C00DE4239 /* CoreNetwork */; };
 		AD596050277A5B9900D56146 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD59604F277A5B9900D56146 /* SettingsView.swift */; };
 		AD596052277A5C0000D56146 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD596051277A5C0000D56146 /* SettingsViewModel.swift */; };
 		AD67B94E275B04A200B46256 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD67B94D275B04A200B46256 /* MainView.swift */; };
@@ -54,35 +53,7 @@
 			remoteGlobalIDString = AD033872272CFC0700DEAB10;
 			remoteInfo = sampleapp;
 		};
-		AD1553922741AE6E00F2A17A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD15538D2741AE6E00F2A17A /* CoreNetwork.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AD1553572740B4FA00F2A17A;
-			remoteInfo = CoreNetwork;
-		};
-		AD1553942741AE6E00F2A17A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD15538D2741AE6E00F2A17A /* CoreNetwork.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AD1553612740B4FA00F2A17A;
-			remoteInfo = CoreNetworkTests;
-		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		AD1553982741AF4D00F2A17A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				AD1553972741AF4D00F2A17A /* CoreNetwork.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AD033873272CFC0700DEAB10 /* sampleapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sampleapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +66,6 @@
 		AD03388D272CFC0A00DEAB10 /* sampleappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD033891272CFC0A00DEAB10 /* sampleappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleappUITests.swift; sourceTree = "<group>"; };
 		AD033893272CFC0A00DEAB10 /* sampleappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleappUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		AD15538D2741AE6E00F2A17A /* CoreNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreNetwork.xcodeproj; path = "modules/core-network-ios/CoreNetwork.xcodeproj"; sourceTree = "<group>"; };
 		AD1553992741CED100F2A17A /* CoreNetwork.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CoreNetwork.plist; sourceTree = "<group>"; };
 		AD23933F2778AE0800984D06 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		AD38A7132757258E009F8722 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -124,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD1553962741AF4D00F2A17A /* CoreNetwork.framework in Frameworks */,
+				AD3DFD7827E3373C00DE4239 /* CoreNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,18 +192,8 @@
 		AD15538C2741AE6D00F2A17A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD15538D2741AE6E00F2A17A /* CoreNetwork.xcodeproj */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AD15538E2741AE6E00F2A17A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AD1553932741AE6E00F2A17A /* CoreNetwork.framework */,
-				AD1553952741AE6E00F2A17A /* CoreNetworkTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AD38A71027572578009F8722 /* home */ = {
@@ -322,13 +282,15 @@
 				AD03386F272CFC0700DEAB10 /* Sources */,
 				AD033870272CFC0700DEAB10 /* Frameworks */,
 				AD033871272CFC0700DEAB10 /* Resources */,
-				AD1553982741AF4D00F2A17A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = sampleapp;
+			packageProductDependencies = (
+				AD3DFD7727E3373C00DE4239 /* CoreNetwork */,
+			);
 			productName = sampleapp;
 			productReference = AD033873272CFC0700DEAB10 /* sampleapp.app */;
 			productType = "com.apple.product-type.application";
@@ -401,14 +363,11 @@
 				Base,
 			);
 			mainGroup = AD03386A272CFC0600DEAB10;
+			packageReferences = (
+				AD3DFD7627E3373C00DE4239 /* XCRemoteSwiftPackageReference "core-network-ios" */,
+			);
 			productRefGroup = AD033874272CFC0700DEAB10 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AD15538E2741AE6E00F2A17A /* Products */;
-					ProjectRef = AD15538D2741AE6E00F2A17A /* CoreNetwork.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AD033872272CFC0700DEAB10 /* sampleapp */,
@@ -417,23 +376,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		AD1553932741AE6E00F2A17A /* CoreNetwork.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CoreNetwork.framework;
-			remoteRef = AD1553922741AE6E00F2A17A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD1553952741AE6E00F2A17A /* CoreNetworkTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CoreNetworkTests.xctest;
-			remoteRef = AD1553942741AE6E00F2A17A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AD033871272CFC0700DEAB10 /* Resources */ = {
@@ -839,6 +781,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD3DFD7627E3373C00DE4239 /* XCRemoteSwiftPackageReference "core-network-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ricarlo-silva/core-network-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD3DFD7727E3373C00DE4239 /* CoreNetwork */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD3DFD7627E3373C00DE4239 /* XCRemoteSwiftPackageReference "core-network-ios" */;
+			productName = CoreNetwork;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AD03386B272CFC0600DEAB10 /* Project object */;
 }
