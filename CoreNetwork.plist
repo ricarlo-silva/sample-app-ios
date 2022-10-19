@@ -2,9 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>BASE_URL</key>
-	<string></string>
 	<key>LOG_LEVEL</key>
 	<string>BODY</string>
+	<key>BASE_URL</key>
+	<string>https://api.github.com</string>
+	<key>TIMEOUT_INTERVAL_FOR_REQUEST</key>
+	<integer>60</integer>
+	<key>TIMEOUT_INTERVAL_FOR_RESOURCE</key>
+	<integer>60</integer>
+	<key>SSL_PINNING</key>
+	<array>
+		<dict>
+			<key>Domain</key>
+			<string>api.github.com</string>
+			<key>PublicKeyHashes</key>
+			<array>
+				<string>azE5Ew0LGsMgkYqiDpYay0olLAS8cxxNGUZ8OJU756k=</string>
+				<string>azE5Ew0LGsMgkYqiDpYay0olLAS8cxxNGUZ8OJU756p=</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

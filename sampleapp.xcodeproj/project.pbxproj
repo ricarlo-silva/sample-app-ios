@@ -16,6 +16,7 @@
 		AD033894272CFC0A00DEAB10 /* sampleappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD033893272CFC0A00DEAB10 /* sampleappUITestsLaunchTests.swift */; };
 		AD15539A2741CED100F2A17A /* CoreNetwork.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD1553992741CED100F2A17A /* CoreNetwork.plist */; };
 		AD2393402778AE0800984D06 /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD23933F2778AE0800984D06 /* LibraryViewModel.swift */; };
+		AD2A685227E81E5D002F9191 /* CoreNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = AD2A685127E81E5D002F9191 /* CoreNetwork */; };
 		AD38A7142757258E009F8722 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38A7132757258E009F8722 /* HomeView.swift */; };
 		AD38A716275725A6009F8722 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38A715275725A6009F8722 /* HomeViewModel.swift */; };
 		AD38A71827572993009F8722 /* UserProfileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38A71727572993009F8722 /* UserProfileResponse.swift */; };
@@ -25,7 +26,6 @@
 		AD3CAE1E27547A1B001734E8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3CAE1D27547A1B001734E8 /* AuthViewModel.swift */; };
 		AD3CAE2027547ADA001734E8 /* UserSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3CAE1F27547ADA001734E8 /* UserSession.swift */; };
 		AD3CAE2227547D7D001734E8 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD3CAE2127547D7D001734E8 /* Keys.plist */; };
-		AD3DFD7827E3373C00DE4239 /* CoreNetwork in Frameworks */ = {isa = PBXBuildFile; productRef = AD3DFD7727E3373C00DE4239 /* CoreNetwork */; };
 		AD596050277A5B9900D56146 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD59604F277A5B9900D56146 /* SettingsView.swift */; };
 		AD596052277A5C0000D56146 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD596051277A5C0000D56146 /* SettingsViewModel.swift */; };
 		AD67B94E275B04A200B46256 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD67B94D275B04A200B46256 /* MainView.swift */; };
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3DFD7827E3373C00DE4239 /* CoreNetwork in Frameworks */,
+				AD2A685227E81E5D002F9191 /* CoreNetwork in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +289,7 @@
 			);
 			name = sampleapp;
 			packageProductDependencies = (
-				AD3DFD7727E3373C00DE4239 /* CoreNetwork */,
+				AD2A685127E81E5D002F9191 /* CoreNetwork */,
 			);
 			productName = sampleapp;
 			productReference = AD033873272CFC0700DEAB10 /* sampleapp.app */;
@@ -364,7 +364,7 @@
 			);
 			mainGroup = AD03386A272CFC0600DEAB10;
 			packageReferences = (
-				AD3DFD7627E3373C00DE4239 /* XCRemoteSwiftPackageReference "core-network-ios" */,
+				AD2A684E27E81E23002F9191 /* XCRemoteSwiftPackageReference "core-network-ios" */,
 			);
 			productRefGroup = AD033874272CFC0700DEAB10 /* Products */;
 			projectDirPath = "";
@@ -783,7 +783,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AD3DFD7627E3373C00DE4239 /* XCRemoteSwiftPackageReference "core-network-ios" */ = {
+		AD2A684E27E81E23002F9191 /* XCRemoteSwiftPackageReference "core-network-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ricarlo-silva/core-network-ios";
 			requirement = {
@@ -794,9 +794,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AD3DFD7727E3373C00DE4239 /* CoreNetwork */ = {
+		AD2A685127E81E5D002F9191 /* CoreNetwork */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AD3DFD7627E3373C00DE4239 /* XCRemoteSwiftPackageReference "core-network-ios" */;
+			package = AD2A684E27E81E23002F9191 /* XCRemoteSwiftPackageReference "core-network-ios" */;
 			productName = CoreNetwork;
 		};
 /* End XCSwiftPackageProductDependency section */
